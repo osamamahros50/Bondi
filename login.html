@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="shortcut icon" href="./img/login.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index-style.css">
+</head>
+<body>
+    <main class="main-home">
+        <section class="d-flex justify-content-center align-items-center h-100">
+            <!-- From Uiverse.io by LightAndy1 --> 
+            <form id="formInput">
+                <div class="package">
+                    <div class="package2 pt-5">
+                        <h2 class="fw-bold text-white mb-3">Login in</h2>
+                       
+                        <div class=" mb-3">
+                            <input oninput="valdateInputs(this)" type="text" class="form-control" id="emailInput" placeholder="Enter Your Email">
+                          </div>
+                        <div class=" mb-3">
+                            <input oninput="valdateInputs(this)" type="password" class="form-control" id="passwordInput" placeholder="Enter Your Password">
+                          </div>
+                
+                          <!-- From Uiverse.io by KlaujonRuamni --> 
+                        <button id="btnSignIn" class="beautiful-button mt-2">
+                       Log In
+                        </button>
+                        <p class="text-white mt-2"> Don't have an account <a class="text-white" href="./index.html"> Sign Up</a></p>
+                    </div>
+                  </div>
+            </form>
+      
+        </section>
+       </main> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>

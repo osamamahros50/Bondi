@@ -1,0 +1,510 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+*
+{
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+body{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.colorContainer
+{
+    position: fixed;
+    left: 0px;
+    top: 40%;
+    z-index: 5;
+}
+.colorContainer ul li
+{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+   padding: 10px;
+    background-color: #0a66c2;
+    cursor: pointer;
+    
+}
+
+.colorContainer .color-info
+{
+    background-color: #ccc;
+   float:left;
+   border: 3px solid #0a66c2;
+}
+.colorContainer a  
+{
+    cursor: pointer;
+}
+#mybtn{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: none;  
+}
+.main-btn
+{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding:.5rem 1.5rem;
+}
+.main-btn:hover
+{
+   
+    color: var(--yellow-color);
+    border: 2px solid    var(--red-color);
+}
+.main-btn:focus:hover
+{
+   
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+
+}
+.main-title::after
+{
+    content: "";
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--green-color);
+    bottom:-20px;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+/*start navbar*/
+.navbar
+{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link
+{
+    color: white;
+}
+.navbar .navbar-toggler
+{
+    color: white;
+    border-color:white;
+    font-size: 30px;
+}
+.navbar .navbar-toggler:focus
+{
+    box-shadow: none;
+    border-color:var(--green-color);
+}
+.navbar .search
+{
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+.navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link:focus, .navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+
+
+/*End navbar*/
+
+/* start landing*/
+    .landing
+    {
+        background-color: var(--dark-color);
+        height: calc(100vh - 54px);
+    }
+/* End landing*/
+
+/* start feature */
+.feature .icon-handler
+{
+    height:200px;
+}
+.feature .icon-handler svg
+{
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.feature .icon-handler .number
+{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.feature .icon-handler .icon{
+    font-size: 4rem;
+    color: var(--green-color);
+}
+.feature .feat h4
+{
+    color: var(--yellow-color);
+}
+/* End feature */
+
+/*start works*/
+.our-works
+{
+    background-color: var(--section-color);
+}
+.our-works ul 
+{
+    font-weight:bold;
+}
+.our-works ul li button{
+    cursor: pointer;
+    color: #19283f !important;
+   
+}
+.our-works ul li button.active
+{
+    background-color: var(--red-color) !important;
+    color:var(--yellow-color) !important;
+    font-weight: bold;
+    border-radius: 50px !important;
+}
+.our-works ul li button:not(.active):hover
+{
+    color: var(--red-color) !important;
+}
+.our-works .box
+{
+    padding: 5px;
+    overflow: hidden;
+    
+}
+
+
+/*Start Stuff*/
+.stuff .parg
+{
+    max-width:500px;
+}
+/*End Stuff*/
+
+/* start team */
+.team
+{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .box h4
+{
+    background-color: var(--green-color);
+    
+}
+.team .box img:hover{
+    scale: 1.1;
+}
+
+/* End team */
+/* start Blog */
+.Blogs .card:hover img{
+    scale: 1.1;
+}
+/* End Blog */
+
+/* start project */
+.project
+{
+    background-color: var(--dark-color);
+}
+.project h3{
+    color: var(--yellow-color);
+}
+/* End project */
+/* start subscripe */
+.sucripe
+{
+    background-color: var(--yellow-color);
+}
+.sucripe input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.sucripe input[type="text"]:focus
+{
+    outline: none;
+}
+.sucripe ::placeholder
+{
+    color: white;
+}
+.sucripe input[type="submit"]
+{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.sucripe input[type="submit"]:hover{
+    border: 2px solid var(--dark-color);
+    background-color: var(--yellow-color);
+    color: var(--dark-color);
+}
+/* End subscripe */
+
+/* start footer  */
+.footer
+{
+    background-color: var(--dark-color);
+}
+.footer .copyright>span
+{
+ color:var(--green-color);
+}
+.footer .copyright div span {
+    color: var(--yellow-color);
+}
+
+.footer .contact ul svg
+{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+    color: var(--section-color);
+  
+}
+.footer .twitter{
+    background-color: #1da1f2;
+    color: var(--section-color);
+}
+.footer .linkedin{
+    background-color: #0a66c2;
+    color: var(--section-color);
+}
+.footer .youtube{
+    background-color: #ff0000;
+    color: var(--section-color);
+}
+
+/* ENd footer  */
+
+
+
+/* Start loader Screen */
+.semsm {
+    height:100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #100720;
+    z-index: 99999;
+}
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.loader:after {
+    box-shadow: 0 2px 0 #ff3d00 inset;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* End loader Screen */
+
+/* Start Scroll Top */
+.arrow{
+    position: fixed;
+    background-color: var(--dark-color);
+    bottom: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--red-color);
+    border: none;
+}
+/* End Scroll Top */
+
+/* Start box */
+.lightContainer{
+    background-color: rgba(0, 0, 0, 0.7);
+    inset: 0;
+    z-index: 555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.lightContainer .container-info{
+   background-image: url('../img/work-01.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+.lightContainer .container-info .icon{
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    color: var(--section-color);
+   
+    cursor: pointer;
+}
+#close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+/* End box */
+
+
+/* Start style SignUp */
+.main-home{
+    background-color: var(--dark-color);
+    height: 100vh;
+}
+
+/* From Uiverse.io by LightAndy1 */ 
+form{
+    width: 50%;
+    height: 60%;
+}
+.package {
+  
+    background-image: linear-gradient(163deg, #ff00ff 0%, #3700ff 100%);
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+  }
+  
+  .package:hover {
+    box-shadow: 0px 0px 30px 1px rgba(204, 0, 255, 0.3);
+  }
+  
+  .package2 {
+    width: 100%;
+    height: 100% ;
+    background-color: #1d1724;
+    border-radius: 10px;
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+    padding: 15px;
+    cursor: pointer;
+
+  }
+  
+  .package2:hover {
+    transform: scale(0.99);
+    border-radius: 18px;
+  }
+  
+.package2 input{
+    background-color:transparent;
+    color: white !important;
+    height: 50px;
+    
+}
+.package2 input:focus{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+input::placeholder{
+    
+    color: white  !important;
+}
+  
+/* From Uiverse.io by KlaujonRuamni */ 
+.beautiful-button {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 28px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: button-shimmer 2s infinite;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .beautiful-button:hover {
+    background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+    animation: button-particles 1s ease-in-out infinite;
+    transform: translateY(-2px);
+  }
+  
+  .beautiful-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes button-shimmer {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+  
+  @keyframes button-particles {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+  .main-home a{
+    text-decoration: none;
+  }
+.main-home a:hover{
+text-decoration: underline;
+}
